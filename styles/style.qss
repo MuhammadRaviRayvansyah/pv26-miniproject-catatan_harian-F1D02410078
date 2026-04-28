@@ -1,0 +1,136 @@
+
+QMainWindow, QDialog {
+    /* Gradasi warna dari sudut kiri atas ke kanan bawah */
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #E0EAFC, stop:1 #CFDEF3);
+}
+
+QWidget {
+    font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+    color: #2B3674;
+}
+
+#judulUtama {
+    color: #1B2559; 
+    font-size: 24px;
+    font-weight: 800;
+    padding: 15px 0px 5px 0px;
+    letter-spacing: 1px;
+}
+
+/* TOOLBAR & KOTAK PENCARIAN */
+QToolBar {
+    background-color: rgba(255, 255, 255, 0.6); 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+    padding: 8px;
+    spacing: 10px;
+}
+
+QToolButton {
+    color: #4318FF;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 8px 15px;
+    border-radius: 8px;
+    background-color: transparent;
+}
+
+QToolButton:hover {
+    background-color: #FFFFFF;
+    color: #4318FF;
+}
+
+QLineEdit {
+    background-color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    border-radius: 15px; /* Membuat ujung kotak pencarian melengkung (pill shape) */
+    padding: 6px 15px;
+    font-size: 13px;
+}
+
+/* TABEL */
+QTableWidget {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 12px;
+    font-size: 14px;
+    color: #2B3674;
+    gridline-color: #E2E8F0;
+    outline: none;
+}
+
+QTableWidget::item {
+    padding: 5px;
+    border-bottom: 1px solid #F4F7FE;
+}
+
+QTableWidget::item:selected {
+    background-color: #4318FF;
+    color: #FFFFFF;
+    border-radius: 4px;
+}
+
+QHeaderView::section {
+    background-color: #FFFFFF;
+    color: #A3AED0;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 12px;
+    border: none;
+    border-bottom: 2px solid #E2E8F0;
+}
+
+/* FORM INPUT */
+QLabel {
+    font-weight: bold;
+    color: #2B3674;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+QDateEdit, QComboBox, QTextEdit {
+    background-color: #FFFFFF;
+    border: 2px solid #E2E8F0;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 14px;
+    color: #2B3674;
+}
+
+QLineEdit:focus, QDateEdit:focus, QComboBox:focus, QTextEdit:focus {
+    border: 2px solid #4318FF; 
+    background-color: #FFFFFF;
+}
+
+QComboBox::drop-down {
+    border: none;
+    padding-right: 10px;
+}
+
+/* TOMBOL */
+QPushButton {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+}
+
+/* Tombol Default (Batal / Tutup) */
+QPushButton {
+    background-color: #FFFFFF;
+    color: #2B3674;
+    border: 1px solid #E2E8F0;
+}
+QPushButton:hover {
+    background-color: #F4F7FE;
+}
+
+/* Tombol Aksi Utama Simpan */
+#tombolSimpan {
+    background-color: #4318FF;
+    color: #FFFFFF;
+    border: none;
+}
+#tombolSimpan:hover {
+    background-color: #3311DB;
+}
